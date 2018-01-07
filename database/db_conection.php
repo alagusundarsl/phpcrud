@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Ehtesham Mehmood
- * Date: 11/21/2014
- * Time: 1:13 AM
- */
-
-$dbcon=mysqli_connect("localhost","root","");
-
-mysqli_select_db($dbcon,"users");
+$con=mysqli_init(); 
+mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); 
+mysqli_real_connect($con, "sundarphpwork.mysql.database.azure.com", "alagu123@sundarphpwork", {suntest123$}, {users}, 3306);
 
 ?>
